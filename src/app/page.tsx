@@ -102,10 +102,19 @@
 //   );
 // }
 
-import React from "react";
-
-const page = () => {
-  return <main>page</main>;
+import { Carousel } from "@/components/Carousel";
+import { Metadata } from "next";
+import { bannerImages } from "@/utils";
+export const metadata: Metadata = {
+  title: "Home |  Mini-Commerce",
 };
 
-export default page;
+const Home = () => {
+  return (
+    <main className="lg:mx-[2%]">
+      <Carousel data={bannerImages} />
+    </main>
+  );
+};
+
+export default Home;
