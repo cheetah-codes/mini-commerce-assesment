@@ -1,6 +1,6 @@
 import { Product } from "@/types";
-import Container from "./Container";
 import ProductCard from "./shared/ProductCard";
+import Container from "./Container";
 
 type ProductsArray = {
   products: Product[];

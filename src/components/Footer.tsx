@@ -1,7 +1,7 @@
 import React from "react";
-import Container from "./Container";
 import { footerData } from "@/constants";
 import FooterMiddleList from "./FooterMiddleList";
+import Container from "./Container";
 
 const Footer = () => {
   return (
