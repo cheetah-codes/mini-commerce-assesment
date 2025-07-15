@@ -30,6 +30,13 @@ body {
     @apply px-2 border border-transparent hover:border-black duration-300 cursor-pointer flex items-center justify-center h-[70%] rounded-[5px];
   }
 
+  /* .link {
+    @apply border border-white/10 hover:border-amazonYellowDark hover:text-white py-1 px-2 cursor-pointer duration-200;
+  }
+  .footerLink {
+    @apply hover:underline text-sm hover:text-gray-100 cursor-pointer mb-2 duration-150;
+  } */
+
   .carousel {
     position: relative;
     display: flex;
@@ -92,4 +99,18 @@ body {
   .indicator-inactive {
     background-color: #e5e5e5;
   }
+}
+
+@theme {
+  --color-amazonBlue: #131921;
+  --color-lightText: #ccc;
+  --color-amazonLight: #232f3e;
+  --color-quantity_box: #f0f2f2;
+  --color-footerBottom: #131a22;
+  --color-amazonYellow: #fcd814;
+  --color-amazonYellowDark: #f7ca00;
+  --color-amazonOrange: #fba41c;
+  --color-amazonOrangeDark: #fa8900;
+  --color-amazonGreen: #7fda69;
+  --color-footerBg: #232f3d;
 }

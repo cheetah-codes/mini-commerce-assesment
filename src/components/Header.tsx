@@ -12,7 +12,7 @@ import HeaderBottom from "./HeaderBottom";
 const Header = () => {
   return (
     <header className="stickey top-0 z-50">
-      <div className="w-full h-20 bg-[#ffffff] text-lightText">
+      <div className="w-full h-20 bg-[#ffffff]">
         <div className="h-full w-full mx-auto inline-flex items-center gap-1 md:gap-3 px-4">
           <Link href={"/"}>
             <Image src={logo} alt="logo" className="w-28 object-cover " />

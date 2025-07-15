@@ -105,6 +105,8 @@
 import { Carousel } from "@/components/Carousel";
 import { Metadata } from "next";
 import { bannerImages } from "@/utils";
+import ProductsList from "@/components/ProductsList";
+
 export const metadata: Metadata = {
   title: "Home |  Mini-Commerce",
 };
@@ -113,6 +115,11 @@ const Home = () => {
   return (
     <main className="lg:mx-[2%]">
       <Carousel data={bannerImages} />
+      {/* <div className="-mt-10 md:-m-20 lg:-mt-60 flex items-center justify-center">
+       */}
+       <div>
+        <ProductsList />
+      </div>
     </main>
   );
 };

@@ -6,7 +6,7 @@ type PropType = {
 };
 
 const Container = ({ children, className }: PropType) => {
-  return <div className="max-w-screen-xl mx-auto px-4 lg:px-0">children</div>;
+  return <div className={className}>{children}</div>;
 };
 
 export default Container;
