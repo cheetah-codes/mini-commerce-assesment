@@ -1,10 +1,10 @@
 import React from "react";
 import { Product } from "@/types";
 import Image from "next/image";
-import PriceFormat from "./PriceFormat";
 import AddToCartBtn from "./AddToCartBtn";
 import Link from "next/link";
 import ProductIcon from "./ProductIcon";
+import PriceFormat from "./PriceFormat";
 
 interface Props {
   product: Product;
