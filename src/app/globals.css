@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-:root {
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -23,4 +23,10 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+} */
+
+@layer components {
+  .headerItem {
+    @apply px-2 border border-transparent hover:border-white duration-300 cursor-pointer flex items-center justify-center h-[70%];
+  }
 }
