@@ -27,7 +27,7 @@ body {
 
 @layer components {
   .headerItem {
-    @apply px-2 border border-transparent hover:border-black duration-300 cursor-pointer flex items-center justify-center h-[70%] rounded-[5px];
+    @apply px-2 border border-transparent hover:border-lightash duration-300 cursor-pointer flex items-center justify-center h-[70%] rounded-[5px];
   }
 
   /* .link {
@@ -113,4 +113,5 @@ body {
   --color-amazonOrangeDark: #fa8900;
   --color-amazonGreen: #7fda69;
   --color-footerBg: #232f3d;
+  --color-lightash: #7d8184;
 }

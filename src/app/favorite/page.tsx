@@ -1,5 +1,5 @@
-import Container from "@/src/components/Container";
-import Title from "@/src/components/Title";
+import Container from "@/components/Container";
+import Title from "@/components/Title";
 import React from "react";
 
 const FavoritePage = () => {

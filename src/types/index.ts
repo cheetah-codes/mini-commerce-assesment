@@ -52,6 +52,7 @@ export type Product = {
   warrantyInformation: string;
   weight?: number;
   quantity?: number | undefined;
+  slug?: string;
 };
 
 export interface Session {

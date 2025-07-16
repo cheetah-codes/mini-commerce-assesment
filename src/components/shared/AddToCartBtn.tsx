@@ -4,7 +4,7 @@ import { Product } from "@/types/index";
 import { store } from "@/store/store";
 import { cn } from "@/utils/index";
 import { FaMinus, FaPlus } from "react-icons/fa";
-// import toast from "react-hot-toast";
+import toast from "react-hot-toast";
 
 interface Props {
   product: Product;
@@ -25,28 +25,28 @@ const AddToCartBtn = ({ product, className }: Props) => {
     setExistingProduct(availableItem || null);
   }, [product, cartProduct]);
 
-  // const handleAddToCart = () => {
-  //   if (product) {
-  //     addToCart(product);
-  //     toast.success(
-  //       `${product?.title.substring(0, 12)}... added successfully!`
-  //     );
-  //   }
-  // };
+  const handleAddToCart = () => {
+    if (product) {
+      addToCart(product);
+      toast.success(
+        `${product?.title.substring(0, 12)}... added successfully!`
+      );
+    }
+  };
 
-  // const handleDeleteProduct = () => {
-  //   if (existingProduct) {
-  //     if (existingProduct?.quantity! > 1) {
-  //       decreaseQuantity(existingProduct?.id);
-  //       toast.success(
-  //         `${product?.title.substring(0, 10)} decreased successfully`
-  //       );
-  //     } else {
-  //       toast.error("You can not decrease less than 1");
-  //     }
-  //   } else {
-  //   }
-  // };
+  const handleDeleteProduct = () => {
+    if (existingProduct) {
+      if (existingProduct?.quantity! > 1) {
+        decreaseQuantity(existingProduct?.id);
+        toast.success(
+          `${product?.title.substring(0, 10)} decreased successfully`
+        );
+      } else {
+        toast.error("You can not decrease less than 1");
+      }
+    } else {
+    }
+  };
 
   return (
     <>
@@ -54,7 +54,7 @@ const AddToCartBtn = ({ product, className }: Props) => {
         <div className="flex self-start items-center justify-center gap-2 py-2 mb-2">
           <button
             disabled={existingProduct?.quantity! <= 1}
-            // onClick={handleDeleteProduct}
+            onClick={handleDeleteProduct}
             className="bg-[#f7f7f7] text-black p-2 border-[1px] border-gray-200 hover:border-skyText rounded-full text-sm hover:bg-white duration-200 cursor-pointer disabled:text-gray-300 disabled:hover:bg-[#f7f7f7]"
           >
             <FaMinus />
@@ -63,7 +63,7 @@ const AddToCartBtn = ({ product, className }: Props) => {
             {existingProduct?.quantity}
           </p>
           <button
-            // onClick={handleAddToCart}
+            onClick={handleAddToCart}
             className="bg-[#f7f7f7] text-black p-2 border-[1px] border-gray-200 hover:border-skyText rounded-full text-sm hover:bg-white duration-200 cursor-pointer"
           >
             <FaPlus />
@@ -71,9 +71,9 @@ const AddToCartBtn = ({ product, className }: Props) => {
         </div>
       ) : (
         <button
-          // onClick={handleAddToCart}
+          onClick={handleAddToCart}
           className={cn(
-            "text-sm tracking-wide font-medium mb-2 border-[1px] border-amazonBlue/50 py-2 rounded-full bg-amazonLight/10 hover:bg-amazonYellowDark duration-200",
+            "text-sm tracking-wide font-medium mb-2 border-[1px] border-amazonBlue/50 py-2 rounded-full bg-amazonLight/10 hover:bg-black hover:text-white duration-200",
             className
           )}
         >

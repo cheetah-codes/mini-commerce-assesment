@@ -7,11 +7,10 @@ import SearchInput from "./forms/SearchInput";
 import SignInBtn from "./forms/SignInBtn";
 import FavoriteBtn from "./shared/FavoriteBtn";
 import CartBtn from "./shared/CartBtn";
-import HeaderBottom from "./HeaderBottom";
 
 const Header = () => {
   return (
-    <header className="stickey top-0 z-50">
+    <header className="stickey top-0 z-50 mb-[5px]">
       <div className="w-full h-20 bg-[#ffffff]">
         <div className="h-full w-full mx-auto inline-flex items-center gap-1 md:gap-3 px-4">
           <Link href={"/"}>
@@ -22,7 +21,7 @@ const Header = () => {
             <FaLocationDot className="text-lg text-white" />
             <div className="text-xs">
               <p>Deliver to</p>
-              <p className="text-white font-bold">USA</p>
+              <p className="text-lightash font-bold">USA</p>
             </div>
           </div>
           {/* //////////search//////////////////// */}
@@ -32,7 +31,6 @@ const Header = () => {
           <CartBtn />
         </div>
       </div>
-      <HeaderBottom />
     </header>
   );
 };

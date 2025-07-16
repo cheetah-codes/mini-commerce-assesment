@@ -4,7 +4,7 @@ import { Product } from "@/types";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-const ProductImage = ({ product }: { product: Product }) => {
+export const ProductImage = ({ product }: { product: Product }) => {
   const [imgUrl, setImgUrl] = useState("");
   useEffect(() => {
     if (product) {

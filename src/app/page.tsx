@@ -107,6 +107,7 @@ import { Metadata } from "next";
 import { bannerImages } from "@/utils";
 import ProductsList from "@/components/ProductsList";
 import { fetchData } from "@/api";
+import createProductsQueryOptions from "@/api/react-query";
 
 export const metadata: Metadata = {
   title: "Home |  Mini-Commerce",
@@ -119,8 +120,9 @@ async function Home() {
   return (
     <main className="lg:mx-[2%]">
       <Carousel data={bannerImages} />
-      {/* <div className="-mt-10 md:-m-20 lg:-mt-60 flex items-center justify-center">
-       */}
+
+      <div className="-mt-10 md:-m-20 lg:-mt-60 flex items-center justify-center"></div>
+
       <div>
         <ProductsList products={products} />
       </div>

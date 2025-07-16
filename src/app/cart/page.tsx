@@ -1,7 +1,9 @@
 import { auth } from "@/auth";
-import CartProducts from "@/src/components/cart/CartProducts";
-import Container from "@/src/components/Container";
-import { getSession } from "@/src/hooks";
+import CartProducts from "@/components/cart/CartProducts";
+import Container from "@/components/Container";
+// import CartProducts from "@/src/components/cart/CartProducts";
+// import Container from "@/src/components/Container";
+// import { getSession } from "@/src/hooks";
 import { Metadata } from "next";
 import { redirect } from "next/navigation";
 

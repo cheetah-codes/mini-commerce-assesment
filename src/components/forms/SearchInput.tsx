@@ -17,10 +17,10 @@ const SearchInput = () => {
       {searchQuery && (
         <MdOutlineClose
           onClick={() => setSearchQuery("")}
-          className=" text-2xl text-[#7d8184] hover:text-red-600 absolute right-14 duration-200 cursor-pointer"
+          className=" text-2xl text-lightash hover:text-red-600 absolute right-14 duration-200 cursor-pointer"
         />
       )}
-      <span className="w-12 h-full hover text-[#7d8184] text-2xl flex items-center justify-center rounded-tr-md rounded-br-md absolute right-0">
+      <span className="w-12 h-full hover text-lightash text-2xl flex items-center justify-center rounded-tr-md rounded-br-md absolute right-0">
         <HiOutlineSearch />
       </span>
     </div>
