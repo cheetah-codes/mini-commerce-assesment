@@ -1,6 +1,6 @@
 "use client";
-import Container from "@/src/components/Container";
-import { store } from "@/src/lib/store";
+import Container from "@/components/Container";
+import { store } from "@/store/store";
 import Link from "next/link";
 import { redirect, useSearchParams } from "next/navigation";
 import React, { useEffect } from "react";

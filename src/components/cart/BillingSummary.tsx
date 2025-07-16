@@ -1,7 +1,7 @@
 "use client";
-import { calculateCartTotals } from "@/src/lib/utils";
-import React from "react";
-import PriceFormat from "../PriceFormat";
+
+import { calculateCartTotals } from "@/utils";
+import PriceFormat from "../shared/PriceFormat";
 
 const BillingSummary = () => {
   const { totalAmt } = calculateCartTotals();
