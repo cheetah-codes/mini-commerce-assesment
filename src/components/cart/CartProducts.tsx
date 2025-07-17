@@ -1,10 +1,11 @@
 "use client";
-import { Product, Session } from "@/type";
+import { store } from "@/store/store";
+
 import Container from "../Container";
 import CartProduct from "./CartProduct";
 import CartSummary from "./CartSummary";
-import { store } from "@/src/lib/store";
 import Link from "next/link";
+import { Product } from "@/types";
 
 const CartProducts = ({ user }: any) => {
   const { cartProduct } = store();

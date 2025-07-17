@@ -2,12 +2,13 @@
 import { IoClose } from "react-icons/io5";
 import toast from "react-hot-toast";
 import { FaCheck } from "react-icons/fa";
-import { store } from "@/src/lib/store";
 import Link from "next/link";
-import PriceFormat from "../PriceFormat";
-import AddToCartBtn from "../AddToCartBtn";
-import { Product } from "@/type";
+
 import Image from "next/image";
+import { Product } from "@/types";
+import { store } from "@/store/store";
+import PriceFormat from "../shared/PriceFormat";
+import AddToCartBtn from "../shared/AddToCartBtn";
 
 const CartProduct = ({ product }: { product: Product }) => {
   const { removeFromCart } = store();
